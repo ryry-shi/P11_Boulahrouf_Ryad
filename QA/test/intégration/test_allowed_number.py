@@ -16,8 +16,7 @@ def test_points_more_not_than_allowed(client, methods=["POST"]):
             "competition": competition["name"],
         },
     )
-    
     assert response.status_code == 200
-    assert "pas assez de points pour réservez de ticket" in response.get_data(
+    assert "Vous n&#39;avez pas assez de points pour réservez ce montant de ticket" in response.get_data(
         as_text=True
     )
