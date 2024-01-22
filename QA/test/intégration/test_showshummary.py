@@ -1,5 +1,4 @@
 from fichier_client import client
-import server
 
 def test_showshumarry(client):
     response = client.post("/showSummary", data={"email": "john@simplylift.co"})

@@ -1,8 +1,12 @@
 
+from fichier_client import client
+from flask import app, render_template, request, flash
+import server
+
+clubs = server.loadClubs()
+competitions = server.loadCompetitions()
 
 
-
-@app.route('/book/<competition>/<club>')
 def book(competition,club):
     foundClub = [c for c in clubs if c['name'] == club][0]
     foundCompetition = [c for c in competitions if c['name'] == competition][0]
