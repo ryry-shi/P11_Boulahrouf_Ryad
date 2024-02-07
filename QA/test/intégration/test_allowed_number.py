@@ -20,3 +20,5 @@ def test_points_more_not_than_allowed(client, methods=["POST"]):
     assert "Vous n&#39;avez pas assez de points pour réservez ce montant de ticket" in response.get_data(
         as_text=True
     )
+
+
