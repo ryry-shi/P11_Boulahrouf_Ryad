@@ -1,4 +1,4 @@
-from fichier_client import client
+from client_mock import client
 import server
 
 def test_showshumarry_data_dont_found(client):
