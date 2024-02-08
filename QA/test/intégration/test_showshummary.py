@@ -1,4 +1,4 @@
-from fichier_client import client
+from client_mock import client
 
 def test_showshumarry(client):
     response = client.post("/showSummary", data={"email": "john@simplylift.co"})

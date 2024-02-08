@@ -1,4 +1,4 @@
-from fichier_client import client
+from client_mock import client
 
 def test_index(client):
     response = client.get("/")
